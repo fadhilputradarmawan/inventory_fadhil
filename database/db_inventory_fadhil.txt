@@ -1,0 +1,26 @@
+CREATE DATABASE db_inventory_fadhil;
+
+CREATE TABLE barang (
+Id_Barang varchar (20) PRIMARY KEY,
+Id_Jenis varchar (20),
+Nama_barang varchar (40),
+Harga_barang varchar (30)    
+);
+
+
+CREATE TABLE jenis (
+Id_Jenis varchar (20)  PRIMARY KEY,
+Nama_Jenis varchar(30)  
+);
+
+INSERT INTO barang VALUES("B001","Q001","Bor","RP15000"),
+("B002","Q001","Linggis","RP50000"),
+("B003","Q002","Buku","RP2500"),
+("B004","Q002","Pensil","RP1000"),
+("B005","Q001","Terminal","RP20000");
+
+INSERT INTO jenis VALUES("Q001","Matrial"),
+("Q002","Peralatan sekolah"),
+("Q003","Perabotan"),
+("Q004","Bahan Pokok"),
+("Q005","Bahan Baku");
